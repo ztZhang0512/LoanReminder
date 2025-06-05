@@ -17,10 +17,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: 安装依赖
-        run: |
-          pip install smtplib email datetime
-
       - name: 运行 mail.py
         env:
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
