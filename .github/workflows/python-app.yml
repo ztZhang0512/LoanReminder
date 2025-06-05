@@ -2,7 +2,7 @@ name: 每日还贷提醒邮件推送
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # 每天早上 8:00 UTC 时间运行
+    - cron: '0 0 * * *'  # 北京时间每天早上 8:00 运行
   workflow_dispatch:
 
 jobs:
