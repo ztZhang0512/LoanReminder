@@ -52,7 +52,7 @@ if __name__ == '__main__':
     current_date = datetime.date.today()
     
     # 判断是否在首次还款日（2025-07-20）或之后，并且是每月20号
-    if current_date >= datetime.date(2025, 7， 20) and current_date.day == 20:
+    if current_date >= datetime.date(2025,7,20) and current_date.day == 20:
         current_month, payment, remaining_amount = calculate_payment(current_date)
         
         if current_month <= total_months:
